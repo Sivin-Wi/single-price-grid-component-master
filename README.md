@@ -24,8 +24,8 @@
 
 ### Links 🔗
 
-- Solution URL: [page]()
-- Live Site URL: [page]()
+- Solution URL: [page](https://www.frontendmentor.io/solutions/build-with-grid-and-flexbox-5nBNCP8Dcy)
+- Live Site URL: [page](https://sivin-wi.github.io/single-price-grid-component-master/)
 
 ## My process
 
