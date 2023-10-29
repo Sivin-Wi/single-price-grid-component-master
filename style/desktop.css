@@ -1,0 +1,157 @@
+@media only screen and (min-width:1440px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'Karla';
+        src: url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+    }
+
+    body {
+        font-size: 1rem;
+        font-family: 'Karla', sans-serif;
+    }
+
+
+    :root {
+        --headingColor-col-1: hsl(179, 62%, 43%);
+        --button-heading: hsl(71, 73%, 54%);
+        --paraColor-heading-col-2-3: hsl(204, 43%, 93%);
+        --paraColor-col-1: hsl(218, 22%, 67%);
+    }
+
+
+    .containers {
+        height: 100svh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 400px repeat(2, 1fr) 400px;
+        grid-template-rows: 150px repeat(2, 1fr) 150px;
+        grid-auto-flow: row;
+        background-color: var(--paraColor-heading-col-2-3);
+    }
+
+    .containers > .containerOne {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 2/4;
+        grid-row: 2/3;
+        background-color: hsl(0, 0%, 100%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .containers > .containerOne > .subContainerOne {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .containers > .containerOne > .subContainerOne > .heading-1 > h2 {
+        color: var(--headingColor-col-1);
+        font-weight: 700;
+    }
+
+    .containers > .containerOne > .subContainerOne > .heading-2 > h4 {
+        color: var(--button-heading);
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .containers > .containerOne > .subContainerOne > .para > p {
+        line-height: 1.6;
+        color: var(--paraColor-col-1);
+        font-weight: 400;
+    }
+
+    .containers > .containerTwo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--headingColor-col-1);
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 290px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .containers > .containerTwo > .subContainerTwo {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .containers > .containerTwo > .subContainerTwo > .heading-1 > h3 {
+        color: var(--paraColor-heading-col-2-3);
+    }
+
+
+    .containers > .containerTwo > .subContainerTwo > .price-para > .price {
+        display: inline-block;
+        color: var(--paraColor-heading-col-2-3);
+    }
+
+    .containers > .containerTwo > .subContainerTwo > .price-para > .para {
+        display: inline-block;
+        margin-left: 0.6em;
+        color: var(--paraColor-heading-col-2-3)
+    }
+
+    .containers > .containerTwo > .subContainerTwo > .para {
+        color: var(--paraColor-heading-col-2-3);
+    }
+
+    .containers > .containerTwo > .subContainerTwo > .button {
+        align-self: center;
+    }
+
+    .containers > .containerTwo > .subContainerTwo > .button > button {
+        padding: 1.3em 10em;
+        border-radius: 5px;
+        border: none;
+        color: var(--paraColor-heading-col-2-3);
+        background-color: var(--button-heading);
+        box-shadow: 0px 0px 10px 3px grey;
+    }
+
+    .containers > .containerTwo > .subContainerTwo > .button > button:hover {
+        cursor: pointer;
+    }
+
+    .containers > .containerThree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(179, 47%, 52%);
+        grid-column: 3/4;
+        grid-row: 3/4;
+        height: 290px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .containers > .containerThree > .subContainerThree {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .containers > .containerThree > .subContainerThree > .heading > h3 {
+        color: var(--paraColor-heading-col-2-3);
+    }
+
+    .containers > .containerThree > .subContainerThree > .para > p {
+        line-height: 1.4;
+        color: var(--paraColor-heading-col-2-3);
+    }
+
+}
