@@ -29,7 +29,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 400px repeat(2, 1fr) 400px;
-        grid-template-rows: 100px repeat(2, 1fr) 100px;
+        grid-template-rows: 120px repeat(2, 1fr) 120px;
         grid-auto-flow: row;
         background-color: var(--paraColor-heading-col-2-3);
     }
